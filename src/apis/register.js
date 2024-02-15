@@ -1,4 +1,4 @@
-const DB = require("./mockDb");
+const DB = require("../helpers/mockDb");
 
 const register = (req, res) => {
     const newUsername = req.body.username

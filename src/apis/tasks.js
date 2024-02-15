@@ -1,7 +1,7 @@
-const { authCheck } = require("./auth");
+const { authCheck } = require("../helpers/auth");
 const { v4: uuidv4 } = require('uuid');
 
-const DB = require("./mockDb")
+const DB = require("../helpers/mockDb")
 
 const getAllTasks = (req, res) => {
     const auth = authCheck(req.get('accessToken'));

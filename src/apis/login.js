@@ -1,5 +1,5 @@
-const DB = require("./mockDb");
-const { generateAccessToken } = require("./auth");
+const DB = require("../helpers/mockDb");
+const { generateAccessToken } = require("../helpers/auth");
 
 const login = (req, res) => {
     const reqUsername = req.body.username;

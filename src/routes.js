@@ -1,7 +1,13 @@
 const { Router } = require('express');
-const register = require('./register');
-const login = require('./login');
-const { getAllTasks, createTask, updateTask, deleteTask, reOrderTasks } = require('./tasks');
+const register = require('./apis/register');
+const login = require('./apis/login');
+const {
+    getAllTasks,
+    createTask,
+    updateTask,
+    deleteTask,
+    reOrderTasks
+} = require('./apis/tasks');
 
 const router = Router();
 
